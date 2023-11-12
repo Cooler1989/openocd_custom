@@ -1,0 +1,1 @@
+/home/pawelpyszko/programs/openocd/src/openocd -s /home/pawelpyszko/programs/openocd/tcl -f 3cte/dbg_ft2232h.cfg -c "transport select swd" -f target/atsame5x.cfg -c 'bindto 0.0.0.0' -c 'gdb_port 3333' -c 'telnet_port 4444' -c 'tcl_port 6666' -c "adapter usb location 1:2,1,2" -c "adapter speed 500"
